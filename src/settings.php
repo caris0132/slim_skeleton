@@ -19,9 +19,12 @@ return [
         // database
         'db' => [
             'host' => 'localhost',
-            'user' => 'root',
-            'pass' => '',
-            'dbname' => 'slim_ske',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'slim_ske',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => 'table',
         ]
     ],
 ];

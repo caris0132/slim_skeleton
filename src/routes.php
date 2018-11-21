@@ -19,11 +19,11 @@ $app->group('/admin', function ()
 {
 	$this->group('/news', function ()
 	{
-		$this->get('/', 'Src\Controllers\HomeController:index');
-		$this->post('/', 'Src\Controllers\HomeController:store');
-		$this->get('/:id', 'Src\Controllers\HomeController:show');
-		$this->put('/:id', 'Src\Controllers\HomeController:store');
-		$this->delete('/:id', 'Src\Controllers\HomeController:home');
+		$this->get('/', 'Src\Controllers\NewsController:index');
+		$this->post('/', 'Src\Controllers\NewsController:store');
+		$this->get('/:id', 'Src\Controllers\NewsController:show');
+		$this->put('/:id', 'Src\Controllers\NewsController:store');
+		$this->delete('/:id', 'Src\Controllers\NewsController:home');
 
 	});
 	$this->get('/{name}', function (Request $request, Response $response, array $args) {
